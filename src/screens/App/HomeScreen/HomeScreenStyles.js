@@ -32,4 +32,6 @@ export const MainLogo = styled.Image`
 height: ${rh(10)}px;
 width: ${rw(20)}px;
 `
-export const MainBodyView = styled.View``
+export const MainBodyView = styled.View`
+
+`
