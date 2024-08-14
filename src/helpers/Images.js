@@ -15,6 +15,17 @@ B3: require("../assets/images/B3.jpg"),
 B4: require("../assets/images/B4.jpg"),
 B5: require("../assets/images/B5.jpg"),
 B6: require("../assets/images/B6.jpg"),
+search: require("../assets/images/search.png"),
+P1: require("../assets/images/p1.jpg"),
+P2: require("../assets/images/p2.jpg"),
+P3: require("../assets/images/p3.jpg"),
+P4: require("../assets/images/p4.jpg"),
+P5: require("../assets/images/p5.jpg"),
+P6: require("../assets/images/p6.jpg"),
+P7: require("../assets/images/p7.jpg"),
+P8: require("../assets/images/p8.jpg"),
+P9: require("../assets/images/p9.jpg"),
+profile: require("../assets/images/profile.png"),
 
 };
 

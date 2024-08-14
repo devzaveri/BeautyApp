@@ -7,6 +7,7 @@ const ScreenName = {
   },
   app: {
     HomeScreen: 'HomeScreen',
+    ProfileScreen: 'ProfileScreen',
   },
 };
 
