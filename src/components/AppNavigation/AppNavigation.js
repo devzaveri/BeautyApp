@@ -20,14 +20,14 @@ const HomeStack = () => (
     />
   </Stack.Navigator>
 );
-const ProfileStack = () => {
-  <Stack.Navigator screenOptions={{headerShown: false}}>
-  <Stack.Screen
-    screenOptions={{headerShown: false}}
-    name={ScreenName.app.ProfileScreen}
-    component={ProfileScreen}
-  />
-</Stack.Navigator>
+
+function ProfileStack() {
+  return (
+    <Stack.Navigator screenOptions={{headerShown:false}}>
+      <Stack.Screen screenOptions={{headerShown:false}} name={ScreenName.app.ProfileScreen} component={ProfileScreen} />
+      
+    </Stack.Navigator>
+  );
 }
 
 const AppNavigation = () => {

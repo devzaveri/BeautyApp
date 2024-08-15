@@ -1,19 +1,18 @@
-import { View, Text } from 'react-native'
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import AuthStack from '../AuthStack/AuthStack';
 import AppStack from '../Appstack/AppStack';
+import { View } from 'react-native';
 
-const Router = route => {
-    useEffect(()=> {
-        console.log("route=====>" , route);
-    },[route])
+const Router = ({ isAuth }) => {
+  useEffect(() => {
+    console.log("route=====>", isAuth); // Debugging to check the isAuth value
+  }, [isAuth]);
+
   return (
-    <View style={{flex: 1}}>
-      {
-        route?.isAuth ? <AuthStack /> : <AppStack />
-      }
+    <View style={{ flex: 1 }}>
+      {isAuth ? <AppStack /> : <AuthStack />}
     </View>
-  )
-}
+  );
+};
 
-export default Router
+export default Router;

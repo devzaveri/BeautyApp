@@ -27,11 +27,23 @@ import { View, Text } from 'react-native'
 import React, { useState } from 'react'
 import { Colors, Images } from '../../../helpers'
 import ScreenName from '../../../helpers/ScreenNames'
+import emitter from '../../../constants/EventEmitter'
 
 const SignUpScreen = ({navigation}) => {
     const [name , setName] = useState("")
     const [ email , setEmail] = useState("")
     const [password , setPassword] = useState("")
+    useEffect(() => {
+      const loginListener = emitter.addListener('LoginSuccess', () => {
+        console.log('Received login event');
+        setIsAuth(true); // Switch to App stack
+      });
+  
+      return () => {
+        loginListener.remove(); // Cleanup listener when component unmounts
+      };
+    }, []);
+  
     
   function HeaderView(){
     return(
