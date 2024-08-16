@@ -28,6 +28,7 @@ P9: require("../assets/images/p9.jpg"),
 profile: require("../assets/images/profile.png"),
 Mainprofile: require("../assets/images/Mainprofile.png"),
 goInside: require("../assets/images/goInside.png"),
+backbutton: require("../assets/images/backbutton.png"),
 
 };
 

@@ -67,5 +67,24 @@ height: ${rh(4)}px;
 width: ${rw(8)}px;
 margin-left: ${rw(3)}px;
 tint-color: ${Colors.theamTextColor};
-
+`
+export const MainBox = styled.TouchableOpacity`
+flex-direction: row;
+margin-top: ${rh(3)}px;
+margin-left: ${rw(5)}px;
+margin-right: ${rw(5)}px;
+padding-left: ${rw(4)}px;
+padding-right: ${rw(2)}px;
+/* padding-top: ${rh(1)}px;
+padding-bottom: ${rh(1)}px; */
+height: ${rh(7)}px;
+border-width: 1px;
+border-color: ${Colors.theamTextColor};
+border-radius: ${rw(3)}px;
+align-items: center;
+`
+export const BoxName = styled.Text`
+color: ${Colors.theamTextColor};
+font-size: ${rs(18)}px;
+width: ${rw(70)}px;
 `

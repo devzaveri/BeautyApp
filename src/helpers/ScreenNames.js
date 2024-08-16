@@ -8,6 +8,8 @@ const ScreenName = {
   app: {
     HomeScreen: 'HomeScreen',
     ProfileScreen: 'ProfileScreen',
+    EditProfile: "EditProfile",
+    ItemDetails: "ItemDetails"
   },
 };
 

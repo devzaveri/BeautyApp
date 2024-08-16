@@ -34,6 +34,8 @@ width: ${rw(20)}px;
 `
 export const MainBodyView = styled.View`
 flex: 1;
+/* padding-left: ${rw(1)}px;
+padding-right: ${rw(2)}px; */
 `
 export const CarouselBtn = styled.TouchableOpacity`
  flex: 1;
@@ -53,6 +55,8 @@ flex: 1;
 padding-left: ${rw(3)}px;
 `
 export const TrandingItemListTextview = styled.View`
+margin-top: ${rh(3)}px;
+
 `
 export const TrandingText = styled.Text`
 font-size: ${rs(24)}px;
@@ -124,7 +128,7 @@ flex: 1;
 align-items: center;
 justify-content: flex-end;
 flex-direction: row;
-padding-right: ${rw(5)}px;
+padding-right: ${rw(3)}px;
 `
 export const ShowMorebtn = styled.TouchableOpacity`
 

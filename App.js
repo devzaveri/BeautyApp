@@ -5,11 +5,11 @@ import { NavigationContainer } from '@react-navigation/native';
 
 const App = () => {
   const [isLoading , setIsLoading] = useState(false)
-  const [isAuth , setIsAuth] = useState(false)
+  const [isAuth , setIsAuth] = useState(true)
 
   useEffect(()=> {
     console.log("isAuth===App" , isAuth);
-  })
+  },[])
 
   return (
     <NavigationContainer>

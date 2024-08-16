@@ -10,11 +10,14 @@ import {
   ProfileImage,
   ProfileDetailsView,
   ProfileName,
-  GoInsideImage
+  GoInsideImage,
+  MainBox,
+  BoxName
 } from './ProfileScreenStyles'
 import { View, Text } from 'react-native'
 import React, { useEffect } from 'react'
 import { Images } from '../../../helpers'
+import ScreenName from '../../../helpers/ScreenNames'
 
 const ProfileScreen = ({navigation}) => {
     function HeaderContainer(){
@@ -42,7 +45,9 @@ const ProfileScreen = ({navigation}) => {
     function MainContainer(){
       return(
         <MainContainerView>
-          <ProfileContainer>
+          <ProfileContainer onPress={()=> {
+            navigation.navigate(ScreenName.app.EditProfile)
+          }}>
             <ProfileImage resizeMode='contain' source={Images.Mainprofile} />
             <ProfileDetailsView>
               <ProfileName>Dev Zaveri</ProfileName>
@@ -50,6 +55,14 @@ const ProfileScreen = ({navigation}) => {
             </ProfileDetailsView>
             <GoInsideImage resizeMode='contain' source={Images.goInside} />
           </ProfileContainer>
+          <MainBox>
+            <BoxName>Order</BoxName>
+            <GoInsideImage resizeMode='contain' source={Images.goInside} />
+          </MainBox>
+          <MainBox>
+            <BoxName>Cart</BoxName>
+            <GoInsideImage resizeMode='contain' source={Images.goInside} />
+          </MainBox>
         </MainContainerView>
       )
     }

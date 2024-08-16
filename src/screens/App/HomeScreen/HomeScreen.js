@@ -33,6 +33,7 @@ import {View, Text, Dimensions, TouchableOpacity, Image, ScrollView} from 'react
 import React, {useEffect} from 'react';
 import {Colors, Images} from '../../../helpers';
 import Carousel from 'react-native-reanimated-carousel';
+import ScreenName from '../../../helpers/ScreenNames';
 
 const HomeScreen = ({navigation}) => {
   const width = Dimensions.get('window').width;
@@ -291,7 +292,13 @@ const HomeScreen = ({navigation}) => {
 
   function HandleTrandingItemfunc(item , index){
     return(
-     <HandleItemMainView>
+     <HandleItemMainView onPress={()=> {
+      navigation.navigate(ScreenName.app.ItemDetails , {
+        image: item.image,
+        name: item.name,
+        price: item.price
+      })
+     }}>
       
         <ItemView>
           <ItemImage resizeMode='cover' source={item.image} />

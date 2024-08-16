@@ -7,6 +7,8 @@ import {Image} from 'react-native';
 import {Colors, Images} from '../../helpers';
 import {rh, rs, rw} from 'react-native-full-responsive';
 import ProfileScreen from '../../screens/App/ProfileScreen/ProfileScreen';
+import EditProfile from '../../screens/App/EditProfile/EditProfile';
+import ItemDetails from '../../screens/App/ItemDetails/ItemDetails';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -18,6 +20,11 @@ const HomeStack = () => (
       name={ScreenName.app.HomeScreen}
       component={HomeScreen}
     />
+    <Stack.Screen
+      screenOptions={{headerShown: false}}
+      name={ScreenName.app.ItemDetails}
+      component={ItemDetails}
+    />
   </Stack.Navigator>
 );
 
@@ -25,6 +32,7 @@ function ProfileStack() {
   return (
     <Stack.Navigator screenOptions={{headerShown:false}}>
       <Stack.Screen screenOptions={{headerShown:false}} name={ScreenName.app.ProfileScreen} component={ProfileScreen} />
+      <Stack.Screen screenOptions={{headerShown:false}} name={ScreenName.app.EditProfile} component={EditProfile} />
       
     </Stack.Navigator>
   );
