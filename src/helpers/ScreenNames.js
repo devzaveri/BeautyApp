@@ -9,7 +9,8 @@ const ScreenName = {
     HomeScreen: 'HomeScreen',
     ProfileScreen: 'ProfileScreen',
     EditProfile: "EditProfile",
-    ItemDetails: "ItemDetails"
+    ItemDetails: "ItemDetails",
+    FavroutsScreen: "FavroutsScreen",
   },
 };
 

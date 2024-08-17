@@ -16,8 +16,24 @@ import {
 import { View, Text, ScrollView } from 'react-native'
 import React from 'react'
 import { Colors, Images } from "../../../helpers"
+import * as ImagePicker from 'react-native-image-picker';
+
 
 const EditProfile = ({navigation}) => {
+  function handleProfile() {
+    ImagePicker.launchImageLibrary(
+      {
+       mediaType: 'photo',
+       includeBase64: false,
+       maxHeight: 200,
+       maxWidth: 200,
+      },
+       response => {
+          console.log(response);
+          setPhoto(response);
+         },
+       )
+  }
     function HeaderContainer(){
         return(
           <MainHeaderView>
@@ -42,7 +58,9 @@ const EditProfile = ({navigation}) => {
       function MainContainer(){
         return(
             <MainContainerView>
-                <ProfileImageView>
+                <ProfileImageView onPress={()=> {
+                  handleProfile()
+                }}>
                     <ProfileImage source={Images.Mainprofile} />
                 </ProfileImageView>
                 <BoxContaoiner>

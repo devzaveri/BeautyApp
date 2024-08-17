@@ -142,6 +142,4 @@ text-decoration: underline;
 
 export const MainFooterView = styled.View`
 align-items: center;
-justify-content: center;
-bottom: ${rh(8)}px;
 `

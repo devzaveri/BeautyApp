@@ -23,8 +23,8 @@ import {
   SignUpBtn,
   SignUpText
 } from './SignUpScreenStyles'
-import { View, Text } from 'react-native'
-import React, { useState } from 'react'
+import { View, Text, ScrollView } from 'react-native'
+import React, { useEffect, useState } from 'react'
 import { Colors, Images } from '../../../helpers'
 import ScreenName from '../../../helpers/ScreenNames'
 import emitter from '../../../constants/EventEmitter'
@@ -98,8 +98,10 @@ function MainFunction(){
 }
   return (
     <MainComponent>
+      <ScrollView>
      {HeaderView()}
     {MainFunction()}
+    </ScrollView>
    </MainComponent>
   )
 }

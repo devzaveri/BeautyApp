@@ -9,6 +9,7 @@ import {rh, rs, rw} from 'react-native-full-responsive';
 import ProfileScreen from '../../screens/App/ProfileScreen/ProfileScreen';
 import EditProfile from '../../screens/App/EditProfile/EditProfile';
 import ItemDetails from '../../screens/App/ItemDetails/ItemDetails';
+import FavroutsScreen from '../../screens/App/FavroutsScreen/FavroutsScreen';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -24,6 +25,11 @@ const HomeStack = () => (
       screenOptions={{headerShown: false}}
       name={ScreenName.app.ItemDetails}
       component={ItemDetails}
+    />
+    <Stack.Screen
+      screenOptions={{headerShown: false}}
+      name={ScreenName.app.FavroutsScreen}
+      component={FavroutsScreen}
     />
   </Stack.Navigator>
 );

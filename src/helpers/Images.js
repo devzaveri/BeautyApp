@@ -7,7 +7,7 @@ closeEye: require("../assets/images/closeEye.png"),
 user: require("../assets/images/user2.png"),
 drawer: require("../assets/images/drawer.png"),
 MainLogoPng: require("../assets/images/MainLogoPng.png"),
-notification: require("../assets/images/notification.png"),
+// notification: require("../assets/images/notification.png"),
 home: require("../assets/images/home.png"),
 B1: require("../assets/images/B1.jpg"),
 B2: require("../assets/images/B2.jpg"),
@@ -28,7 +28,8 @@ P9: require("../assets/images/p9.jpg"),
 profile: require("../assets/images/profile.png"),
 Mainprofile: require("../assets/images/Mainprofile.png"),
 goInside: require("../assets/images/goInside.png"),
-backbutton: require("../assets/images/backbutton.png"),
+backbutton  : require("../assets/images/backbutton.png"),
+notification  : require("../assets/images/Favorite.png"),
 
 };
 

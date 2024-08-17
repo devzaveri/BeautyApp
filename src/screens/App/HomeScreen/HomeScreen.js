@@ -72,46 +72,64 @@ const HomeScreen = ({navigation}) => {
 
   const trandingItem =[
     {
-      name: "Item 1",
+      name: "Item 10",
       image: Images.P1,
       id:1,
       price: 1500,
-      discount: 20
+      discount: 20,
+      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      favrouts: false,
+      cart: false
     },
     {
-      name: "Item 2",
+      name: "Item 11",
       image: Images.P2,
       id:2,
       price: 1200,
-      discount: 25
+      discount: 25,
+      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      favrouts: false,
+      cart: false
     },
     {
-      name: "Item 3",
+      name: "Item 12",
       image: Images.P3,
       id:3,
       price: 3500,
-      discount: 20
+      discount: 20,
+      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      favrouts: false,
+      cart: false
     },
     {
-      name: "Item 4",
+      name: "Item 13",
       image: Images.P4,
       id:4,
       price: 5000,
-      discount: 40
+      discount: 40,
+      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      favrouts: false,
+      cart: false
     },
     {
-      name: "Item 5",
+      name: "Item 14",
       image: Images.P5,
       id:5,
       price: 2300,
-      discount: 30
+      discount: 30,
+      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      favrouts: false,
+      cart: false
     },
     {
-      name: "Item 6",
+      name: "Item 15",
       image: Images.P6,
       id:6,
       price: 4000,
-      discount: 50
+      discount: 50,
+      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      favrouts: false,
+      cart: false
     },
   ]
 
@@ -121,63 +139,90 @@ const HomeScreen = ({navigation}) => {
       image: Images.P6,
       id:1,
       price: 4000,
-      discount: 50
+      discount: 50,
+      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      favrouts: false,
+      cart: false
     },
     {
       name: "Item 2",
       image: Images.P7,
       id:2,
       price: 2500,
-      discount: 50
+      discount: 50,
+      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      favrouts: false,
+      cart: false
     },
     {
       name: "Item 3",
       image: Images.P8,
       id:3,
       price: 1599,
-      discount: 50
+      discount: 50,
+      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      favrouts: false,
+      cart: false
     },
     {
       name: "Item 4",
       image: Images.P9,
       id:4,
       price: 2000,
-      discount: 50
+      discount: 50,
+      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      favrouts: false,
+      cart: false
     },
     {
       name: "Item 5",
       image: Images.P3,
       id:5,
       price: 3200,
-      discount: 50
+      discount: 50,
+      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      favrouts: false,
+      cart: false
     },
     {
       name: "Item 6",
       image: Images.P5,
       id:6,
       price: 1000,
-      discount: 50
+      discount: 50,
+      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      favrouts: false,
+      cart: false
     },
     {
       name: "Item 7",
       image: Images.P1,
       id:7,
       price: 2000,
-      discount: 50
+      discount: 50,
+      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      favrouts: false,
+      cart: false
     },
     {
       name: "Item 8",
       image: Images.P2,
       id:8,
       price: 2000,
-      discount: 50
+      discount: 50,
+      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      favrouts: false,
+      cart: false
     },
     {
       name: "Item 9",
       image: Images.P4,
       id:9,
       price: 2700,
-      discount: 50
+      discount: 50,
+      details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      favrouts: false,
+      cart: false
     },
   ]
 
@@ -199,7 +244,7 @@ const HomeScreen = ({navigation}) => {
         </MainLogoView>
         <OpenDrawerBtn
           onPress={() => {
-            // navigation.openDrawer()
+            navigation.navigate(ScreenName.app.FavroutsScreen)
           }}>
           <OpenDrawerImg resizeMode="contain" source={Images.notification} />
         </OpenDrawerBtn>
@@ -296,7 +341,10 @@ const HomeScreen = ({navigation}) => {
       navigation.navigate(ScreenName.app.ItemDetails , {
         image: item.image,
         name: item.name,
-        price: item.price
+        price: item.price,
+        details: item.details,
+        favrouts: item.favrouts,
+      cart: item.cart
       })
      }}>
       
@@ -316,7 +364,15 @@ const HomeScreen = ({navigation}) => {
   }
   function HandleAllItemfunc(item , index){
     return(
-     <HandleItemMainView>
+     <HandleItemMainView onPress={()=> {
+      navigation.navigate(ScreenName.app.ItemDetails , {
+        image: item.image,
+        name: item.name,
+        price: item.price,
+        details: item.details
+      })
+     
+     }}>
       
         <ItemView>
           <ItemImage resizeMode='cover' source={item.image} />

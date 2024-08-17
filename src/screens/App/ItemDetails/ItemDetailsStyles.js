@@ -44,3 +44,35 @@ padding-bottom: ${rh(4)}px;
 padding-left: ${rw(6)}px;
 padding-right: ${rw(6)}px;
 `
+export const ItemDetailsText = styled.Text`
+color: ${Colors.orignalPriceText};
+font-size: ${rs(12)}px;
+`
+export const PriceText = styled.Text`
+color: ${Colors.theamTextColor};
+font-size: ${rs(20)}px;
+margin-top: ${rh(3)}px;
+`
+export const AddBtnView = styled.View`
+position: absolute;
+bottom: ${rh(2)}px;
+justify-content: space-between;
+width: ${rw(100)}px;
+padding-left: ${rw(6)}px;
+padding-right: ${rw(6)}px;
+flex-direction: row;
+`
+export const AddFavroutBtn = styled.TouchableOpacity`
+/* flex: 1; */
+border-width: 1px;
+height: ${rh(7)}px;
+width: ${rw(40)}px;
+border-radius: ${rw(2)}px;
+border-color: ${Colors.theamTextColor};
+justify-content: center;
+align-items: center;
+`
+export const AddText = styled.Text`
+color: ${Colors.theamTextColor};
+font-size: ${rs(16)}px;
+`

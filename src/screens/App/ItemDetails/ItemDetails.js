@@ -5,22 +5,60 @@ import {
   OpenDrawerBtn,
   OpenDrawerImg,
   ItemName,
-  MainContainerView
+  MainContainerView,
+  ItemDetailsText,
+  PriceText,
+  AddBtnView,
+  AddFavroutBtn,
+  AddText
 } from './ItemDetailsStyles';
 import {View, Text, Image} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import { Images } from '../../../helpers';
+import { useDispatch, useSelector } from 'react-redux';
+import { removeItem, setItems } from '../../../redux/action/action';
 
 const ItemDetails = ({navigation, route}) => {
   const [name, setName] = useState('');
   const [image, setImage] = useState('');
+  const [details, setDetails] = useState('');
   const [price, setPrice] = useState(0);
+  const [addItem , setAddItem] = useState([])
+  const [favrouts , setFavrouts] = useState(false)
+  const [cart , setCart] = useState(false)
+  const dispatch = useDispatch()
+  
   useEffect(() => {
-    console.log('route====>', route?.params);
     setName(route?.params?.name);
     setImage(route?.params?.image);
     setPrice(route?.params?.price);
+    setDetails(route?.params?.details);
+    setFavrouts(route?.params?.favrouts)
   }, []);
+
+ 
+
+  function handleFavrouts(item) {
+    setFavrouts(!favrouts)
+    const SelectedItemDetails = {
+      name: name,
+      image: image,
+      price: price,
+      details: details,
+      favrouts: favrouts? false : true
+    }
+    console.log("SelectedItemDetails====>" , SelectedItemDetails);
+    
+
+    // setAddItem(abc)
+    dispatch(setItems(SelectedItemDetails))
+    
+  }
+
+  useEffect(()=> {
+    console.log("addItem" , addItem);
+    
+  },[addItem])
 
   function HeaderContainer() {
     return (
@@ -47,6 +85,18 @@ const ItemDetails = ({navigation, route}) => {
     return(
         <MainContainerView>
             <ItemName>{name}</ItemName>
+            <ItemDetailsText numberOfLines={5}>{details} </ItemDetailsText>
+            <PriceText>Rs.{price}</PriceText>
+            <AddBtnView>
+              <AddFavroutBtn onPress={()=> {
+                handleFavrouts()
+              }}>
+                    <AddText>Favorite</AddText>
+              </AddFavroutBtn>
+              <AddFavroutBtn>
+              <AddText>Cart</AddText>
+              </AddFavroutBtn>
+            </AddBtnView>
         </MainContainerView>
     )
   }
