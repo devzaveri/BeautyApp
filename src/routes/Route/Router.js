@@ -3,14 +3,14 @@ import AuthStack from '../AuthStack/AuthStack';
 import AppStack from '../Appstack/AppStack';
 import { View } from 'react-native';
 
-const Router = ({ isAuth }) => {
+const Router = ( Router ) => {
   useEffect(() => {
-    console.log("route=====>", isAuth); // Debugging to check the isAuth value
-  }, [isAuth]);
+    console.log("route=====>", Router.isAuth); // Debugging to check the isAuth value
+  }, [Router.isAuth]);
 
   return (
     <View style={{ flex: 1 }}>
-      {isAuth ? <AppStack /> : <AuthStack />}
+      {Router.isAuth ? <AppStack /> : <AuthStack />}
     </View>
   );
 };

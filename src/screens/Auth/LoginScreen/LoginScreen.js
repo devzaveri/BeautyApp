@@ -27,30 +27,19 @@ import {View, Text, Image, TextInput, Alert, ScrollView} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import {Colors, Images} from '../../../helpers';
 import ScreenName from '../../../helpers/ScreenNames';
-import Constants from '../../../constants/Constants';
+import Constants, { commonConstant } from '../../../constants/Constants';
 
 const LoginScreen = ({navigation}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   function HandleLoginevent(){
-    //  console.log("hbjj");
+    
      
     Constants.commonConstant.emitter.emit(
       Constants.eventListenerKeys.loginEvent,
     );
-    // if(email === ""){
-    //   Alert.alert("Please Enter your Email");
-    // } else if(password === ""){
-    //   Alert.alert("Please Enter your password")
-    // } else {
-    //   // navigation.replace(ScreenName.app.HomeScreen)
-    //   console.log("nkl");
-      
-    //   Constants.commonConstant.emitter.emit(
-    //     Constants.eventListenerKeys.loginEvent,
-    //   );
-    // }
+    
   }
 
   function HeaderView() {

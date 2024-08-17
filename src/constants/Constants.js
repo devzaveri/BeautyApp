@@ -27,10 +27,7 @@ export const commonConstant = {
 };
 
 export const asyncStorageKeys = {
-  carData: "carData",
-  interval: "interval",
-  threshold: "threshold",
-  detectionMode: "detectionMode",
+ Login:"Login"
 };
 
 export const eventListenerKeys = {
