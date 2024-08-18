@@ -27,5 +27,43 @@ For the authentication flow, I utilized the <b>fbemitter</b> library to efficien
 <img src="https://github.com/user-attachments/assets/94ecc161-47a7-4fe5-ae94-ad5579e0bc64" width="20%" height="10%"/> &nbsp; &nbsp; &nbsp;
 
 After successful authentication, users are navigated to the Home Page. Here’s what you can expect:
-- <b>Home Page:</b> Displays a list of items available. Users can click on any item to navigate to the Item Details screen for more information.
+- <b>Home Page:</b> Displays a list of items available. Users can click on any item to navigate to the <b>Item Details screen</b> for more information.
 - <b>Favorites:</b> Users can mark items as favorites. These favorites are managed using Redux, allowing the favorites list to persist across sessions. The favorites list can be viewed in the Favorites Screen.
+
+<span style="font-weight:bold;">Bottom Tab Bar & Navigation</span>
+The application features a bottom tab bar for easy navigation:
+- <b>Home Tab:</b> Takes you to the Home Page.
+- <b>Profile Tab:</b> Provides access to user profile settings.
+ 
+<span style="font-weight:bold;">Profile Management</span>
+The Profile Tab allows users to:
+- <b>View Profile:</b> Check their current profile details.
+- <b>Edit Profile:</b> Update their profile information.
+   
+<span style="font-weight:bold;">Technical Details</span>
+<b>React Native:</b>
+The application is built using React Native, leveraging its powerful components and capabilities to create a smooth, native-like user experience.
+
+<b>Redux:</b>
+  State management is handled with Redux, ensuring that data flows smoothly between different components and that the state is maintained consistently across the application.
+      
+<b>Navigation:</b>
+  The navigation is managed using React Navigation, with stack navigation for handling screen transitions and a bottom tab navigator for the main sections of the app.
+      
+<b>Emitter:</b>
+  I utilized the <b>fbemitter</b> library to handle event-based communication between different parts of the app, especially during the authentication flow.
+
+<b>Drawer Navigation:</b>
+  The app also incorporates a drawer for additional navigation options, making it easy to access less frequently used screens.
+
+<h1>Getting Started</h1>
+To get started with this project, clone the repository and install the necessary dependencies:
+
+    git clone https://github.com/devzaveri/BeautyApp.git
+    cd BeautyApp
+    npm install
+Then, run the app using:
+
+    npx react-native run-android
+<h3>Conclusion</h3>
+This project is a reflection of my expertise in React Native, showcasing how different technologies and patterns can be effectively integrated into a mobile application. Feel free to explore the code, and if you have any questions or suggestions, don’t hesitate to reach out!
