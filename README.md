@@ -40,7 +40,8 @@ The Profile Tab allows users to:
 - <b>View Profile:</b> Check their current profile details.
 - <b>Edit Profile:</b> Update their profile information.
    
-<span style="font-weight:bold;">Technical Details</span>
+<b><span style="font-weight:bold;">Technical Details</span></b>
+
 <b>React Native:</b>
 The application is built using React Native, leveraging its powerful components and capabilities to create a smooth, native-like user experience.
 
@@ -52,6 +53,9 @@ The application is built using React Native, leveraging its powerful components 
       
 <b>Emitter:</b>
   I utilized the <b>fbemitter</b> library to handle event-based communication between different parts of the app, especially during the authentication flow.
+  
+<b>Responsive Design:</b>
+Used <b>react-native-full-responsive</b> to ensure the app looks great on all screen sizes.
 
 <b>Drawer Navigation:</b>
   The app also incorporates a drawer for additional navigation options, making it easy to access less frequently used screens.
